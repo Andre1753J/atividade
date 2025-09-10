@@ -16,6 +16,7 @@ export default function App() {
     { id: '1', nome: 'Maça', status: true },
     { id: '2', nome: 'Banana', status: true },
     { id: '3', nome: 'Melancia', status: true },
+    { id: '4', nome: 'coisas', status: true}
   ]);
 
   const renderItem: ListRenderItem<Produto> = ({ item }) => (
@@ -27,7 +28,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Lista do Jorge</Text>
+      <Text style={styles.titulo}>Lista de Produtos</Text>
 
       <View style={styles.inputContainer}>
         <TextInput
